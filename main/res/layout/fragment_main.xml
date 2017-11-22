@@ -1,0 +1,121 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.example.etudiant21.tp_android.MainActivity$PlaceholderFragment"
+                                             android:backgroundTintMode="screen"
+                                             android:background="@color/colorAccent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:background="@android:color/black"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="20dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/contender"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="350dp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <TextView
+                    android:text="@string/HTML_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/HTML_text"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/HTML_value"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:text="@string/color_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/R"
+                android:layout_weight="1"/>
+
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/R_slider"
+                android:layout_weight="1"
+                android:thumbTint="@android:color/holo_red_dark"
+                android:max="255"
+                android:progress="0"
+                android:thumb="@android:drawable/btn_star_big_on"
+                android:thumbTintMode="multiply"/>
+
+        <TextView
+                android:text="@string/color_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/G"
+                android:layout_weight="1"/>
+
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/G_slider"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="0"
+                android:thumb="@android:drawable/btn_star_big_on"
+                android:thumbTint="@android:color/holo_green_dark"
+                android:thumbTintMode="multiply"
+                tools:thumbTint="@android:color/holo_green_dark"/>
+
+        <TextView
+                android:text="@string/color_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/B"
+                android:layout_weight="1"/>
+
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/B_slider"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="0"
+                android:thumb="@android:drawable/btn_star_big_on"
+                android:thumbTint="@color/colorAccent"
+                android:thumbTintMode="multiply"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

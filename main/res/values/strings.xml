@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP_Android</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="HTML_code">HTML code</string>
+</resources>
